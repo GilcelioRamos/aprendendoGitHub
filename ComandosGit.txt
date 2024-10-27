@@ -1,0 +1,33 @@
+comandos git 
+Para clonar repositorio
+git clone <nome do repositorio>
+
+Para clonar uma branch espeficica de um repositorio
+
+git clone -b <nome da branch> <nome do repositorio>
+
+Para criar uma branch 
+
+git checkout -b <nome da branch>
+
+Para entrar em uma branch existente
+ 
+git checkout <nome da branch existe>
+
+Para atualizar as branchs
+
+git fetch
+git pull
+dar esses comandos naa master 
+
+Para saber a partir de qual branch foi criada 
+git show -a |grep -v git rev parse  --abbrev ref HEAD | head -n1 | sed 's/.*[\(.*\).*/\]'|sed's/[\^~].*//'
+dentro da branch
+
+Para subir algo da branch
+git push
+Para commitar
+git commit -m 'frase'
+
+Para desativar ocertificado ssl
+git config --global http.sslverify false 
